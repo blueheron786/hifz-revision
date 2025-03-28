@@ -4,33 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2335632f-de47-41ae-8102-e1ecfde3a8a2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/hifzrevision/web/WebApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/hifzrevision/web/authentication/AuthenticationController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/hifzrevision/web/authentication/AuthenticationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/hifzrevision/web/authentication/JwtAuthenticationFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/hifzrevision/web/authentication/JwtTokenManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/hifzrevision/web/configuration/CorsConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/hifzrevision/web/configuration/SecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/hifzrevision/web/user/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/hifzrevision/web/user/UserDetailsServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/hifzrevision/web/user/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/hifzrevision/web/WebApplicationTests.java" beforeDir="false" />
-    </list>
+    <list default="true" id="2335632f-de47-41ae-8102-e1ecfde3a8a2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,15 +68,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.hifz-revision [bootRun].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "redo__server__side",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.hifz-revision [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;redo__server__side&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="hifz-revision [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
