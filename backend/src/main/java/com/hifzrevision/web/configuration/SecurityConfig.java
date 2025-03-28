@@ -43,12 +43,17 @@ public class SecurityConfig {
                 .csrf(csrf -> csrf.disable())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(authz -> authz
-                        .requestMatchers("/api/auth/register").permitAll() // Allow access to API register endpoint
-                        .requestMatchers("/api/auth/login").permitAll() // Allow access to API login endpoint
+                        .requestMatchers("/api/auth/register").permitAll() // Allow all requests to API register endpoint
+                        .requestMatchers("/api/auth/login").permitAll() // Allow all requests to API login endpoint
                         .requestMatchers("/").permitAll() // Allow access to the root path
                         .anyRequest().authenticated()
                 );
         return http.build();
+    }
+
+    @Bean
+    public WebSecurityCustomizer webSecurityCustomizer() {
+        return (web) -> web.ignoring().requestMatchers("/**");
     }
 
     @Bean

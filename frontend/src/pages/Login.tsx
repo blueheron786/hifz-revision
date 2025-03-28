@@ -22,7 +22,7 @@ const Login = () => {
 
   return (
     <div>
-      <h2>Login</h2>
+      <h2>TSX Login</h2>
       <form onSubmit={handleLogin}>
         <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} placeholder="Username" />
         <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" />
