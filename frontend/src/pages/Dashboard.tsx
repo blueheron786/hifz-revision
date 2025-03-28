@@ -1,4 +1,3 @@
-// src/pages/Dashboard.tsx
 import React from 'react';
 
 function Dashboard() {
