@@ -1,5 +1,8 @@
-package com.hifzrevision.web.authentication;
+package com.hifzrevision.web.controller;
 
+import com.hifzrevision.web.authentication.token.JwtUtils;
+import com.hifzrevision.web.model.User;
+import com.hifzrevision.web.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

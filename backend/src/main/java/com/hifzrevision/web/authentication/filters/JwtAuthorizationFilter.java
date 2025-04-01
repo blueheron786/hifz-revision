@@ -1,6 +1,6 @@
 package com.hifzrevision.web.authentication.filters;
 
-import com.hifzrevision.web.authentication.JwtUtils;
+import com.hifzrevision.web.authentication.token.JwtUtils;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;

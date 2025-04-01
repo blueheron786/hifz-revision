@@ -1,4 +1,4 @@
-package com.hifzrevision.web.authentication;
+package com.hifzrevision.web.authentication.token;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

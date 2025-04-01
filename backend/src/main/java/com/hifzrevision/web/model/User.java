@@ -1,4 +1,4 @@
-package com.hifzrevision.web.authentication;
+package com.hifzrevision.web.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;

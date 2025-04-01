@@ -1,8 +1,8 @@
 package com.hifzrevision.web.configuration;
 
-import com.hifzrevision.web.authentication.JwtUtils;
-import com.hifzrevision.web.authentication.User;
-import com.hifzrevision.web.authentication.UserRepository;
+import com.hifzrevision.web.authentication.token.JwtUtils;
+import com.hifzrevision.web.model.User;
+import com.hifzrevision.web.repository.UserRepository;
 import com.hifzrevision.web.authentication.filters.JwtAuthenticationFilter;
 import com.hifzrevision.web.authentication.filters.JwtAuthorizationFilter;
 import org.springframework.beans.factory.annotation.Autowired;
