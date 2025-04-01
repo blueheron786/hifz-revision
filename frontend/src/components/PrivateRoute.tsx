@@ -1,11 +1,12 @@
-import { Navigate, Outlet } from "react-router-dom";
-import { AuthContext } from "../context/AuthContext";
-import { useContext } from "react";
+import { ReactNode } from 'react';
+import { Navigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 
-// Reroute users to login if not authenticated
-const PrivateRoute = () => {
-  const auth = useContext(AuthContext);
-  return auth?.token ? <Outlet /> : <Navigate to="/login" />;
-};
+export function ProtectedRoute({ children }: { children: ReactNode }) {
+  const { token, loading } = useAuth();
 
-export default PrivateRoute;
+  if (loading) return <div>Loading...</div>;
+  if (!token) return <Navigate to="/login" replace />;
+
+  return <>{children}</>;
+}
