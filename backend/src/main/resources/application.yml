@@ -14,3 +14,6 @@ spring:
     level:
       org.hibernate.SQL: DEBUG
       org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+app:
+  jwtSecret: 512-bit super sekrit development key
+  jwtExpirationMs: 3600000 # an hour
