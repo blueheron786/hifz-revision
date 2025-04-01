@@ -1,6 +1,7 @@
 import { createContext, useContext, useState, ReactNode, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { API_BASE_URL } from '../config';
 
 type AuthContextType = {
   token: string | null;
@@ -25,7 +26,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const login = async (username: string, password: string) => {
-    const response = await axios.post('/api/auth/login', { username, password });
+    const response = await axios.post(`${API_BASE_URL}/auth/login`, { username, password });
     localStorage.setItem('token', response.data.token);
     setToken(response.data.token);
     navigate('/dashboard');

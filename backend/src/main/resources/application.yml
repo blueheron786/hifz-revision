@@ -15,5 +15,5 @@ spring:
       org.hibernate.SQL: DEBUG
       org.hibernate.type.descriptor.sql.BasicBinder: TRACE
 app:
-  jwtSecret: 512-bit super sekrit development key
+  jwtSecret: 512-bit super sekrit development key. Actually, it needs a bit more stuff to be 512 bits. This should do it.
   jwtExpirationMs: 3600000 # an hour
