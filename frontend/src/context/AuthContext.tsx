@@ -19,6 +19,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     const storedToken = localStorage.getItem('token');
+    
+    // TODO: add token validation logic here to ensure the token is still valid
     if (storedToken) {
       setToken(storedToken);
     }
@@ -26,10 +28,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const login = async (username: string, password: string) => {
-    const response = await axios.post(`${API_BASE_URL}/auth/login`, { username, password });
-    localStorage.setItem('token', response.data.token);
-    setToken(response.data.token);
-    navigate('/dashboard');
+    try {
+      const response = await axios.post(`${API_BASE_URL}/auth/login`, { username, password });
+      const { token } = response.data;
+      localStorage.setItem('token', token);
+      setToken(token);
+      navigate('/dashboard');
+    } catch (error) {
+      console.error('Login failed:', error);
+      // TODO: handle error, show notification or message to the user
+    }
   };
 
   const logout = () => {

@@ -1,7 +1,7 @@
 // App.tsx
 import React from 'react';
 import { AuthProvider } from './context/AuthContext';
-import { ProtectedRoute } from './components/PrivateRoute';
+import { ProtectedRoute } from './components/ProtectedRoute';
 import { Navigate, Routes, Route } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
 import Login from './pages/Login';
